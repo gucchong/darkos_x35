@@ -70,13 +70,13 @@ jobs:
             ls -lh dist/*.img
           fi
 
-      - name: Upload X35H artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: darkos-x35h-7z
-          path: dist/*X35H*.7z.*
-          if-no-files-found: error
-          retention-days: 7
+#      - name: Upload X35H artifact
+#        uses: actions/upload-artifact@v4
+#        with:
+#          name: darkos-x35h-7z
+#          path: dist/*X35H*.7z.*
+#          if-no-files-found: error
+#          retention-days: 7
 
       - name: Upload X35S artifact
         uses: actions/upload-artifact@v4
